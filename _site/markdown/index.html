@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Markdown</title>
+    <meta name="description" content="My personal blog on github!">
+
+    <link rel="stylesheet" href="/concon121.github.io/css/main.css">
+    <link rel="canonical" href="http://concon121.github.io/concon121.github.io/markdown/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/concon121.github.io/">Connor's Profile</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/concon121.github.io/about/">About</a>
+          
+        
+          
+          <a class="page-link" href="/concon121.github.io/markdown/">Markdown</a>
+          
+        
+          
+          <a class="page-link" href="/concon121.github.io/blog/">Blog</a>
+          
+        
+          
+          <a class="page-link" href="/concon121.github.io/work/">Work History</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Markdown</h1>
+  </header>
+
+  <article class="post-content">
+    <!--
+This is an HTML comment. It won't show up on your page, but it does show up in the source code.
+
+This file might be helpful as you learn more about markdown. However, you probably don't want it appearing on your final web page. Feel free to remove it from your site at any time.
+
+A permanent copy is found below, so if you do remove it you can still have access to the contents. We've also included it in an "issue" in your GitHub repo: navigate to the "Issues" tab to find it.
+-->
+
+<p>Markdown is a simple, human-readable markup language. In other words, it’s a way to format plaintext in a way that is easy to read and write as plaintext, and which a program like Jekyll can then take and format easily.</p>
+
+<p>A lot of sites use markdown. You may have seen it in blog comments, reddit posts, or GitHub issues. It’s popular because it’s so easy to use. GitHub Pages and Jekyll use markdown to define the content of websites so you don’t have to write HTML and CSS unless you’re redesigning the site.</p>
+
+<p>In this lesson, we’re going to go over the basics of markdown, as well as some GitHub-specific features. By the end, you’ll be able to use markdown not only to produce beautiful Jekyll sites, but also around the web.</p>
+
+<p>A permanent copy of this page can be found at <a href="http://wheelhouseio.github.io/project-gh-pages/markdown/" target="_blank">wheelhouseio.github.io/project-gh-pages/markdown</a>.</p>
+
+<hr />
+
+<h2 id="basic-text-formatting">Basic Text Formatting</h2>
+
+<h3 id="paragraphs">Paragraphs</h3>
+<p>Let’s start simple. Most text in markdown is just written as plaintext. To create a new paragraph, simply hit the “return/enter” button twice to create a blank line between your two paragraphs.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">This is a paragraph.
+
+This is another paragraph.</code></pre></figure>
+
+<blockquote>
+  <p>This is a paragraph.</p>
+
+  <p>This is another paragraph.</p>
+</blockquote>
+
+<h3 id="bold">Bold</h3>
+<p>Say you’re writing a message, and you want one part to be highlighted to the recipient is more likely to pay attention to it. You bold the message. In markdown, you bold text by wrapping it in two asterixes.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">This text is plain, <span class="gs">**this text is bold**</span>.</code></pre></figure>
+
+<blockquote>
+  <p>This text is plain, <strong>this text is bold</strong>.</p>
+</blockquote>
+
+<p>The wrapped text will end up bold in the final project.</p>
+
+<h3 id="italics">Italics</h3>
+<p>If you want to italitize some text, you can wrap it with a single underscore character on each side.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">We're reading _My Brilliant Friend_ in our book club this month.</code></pre></figure>
+
+<blockquote>
+  <p>We’re reading <em>My Brilliant Friend</em> in our book club this month.</p>
+</blockquote>
+
+<p>Using a single asterisk will also work if you don’t like the looks of the underscore character.</p>
+
+<h3 id="formatting-across-paragraphs">Formatting across paragraphs.</h3>
+<p>Bolding, italicizing, and striking out are all line-level formats. That is to say, they won’t work across paragraphs. For instance, if you want to bold two whole paragraphs, you’ll have to separately mark each one as bolded.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="gs">**Bold paragraph the first.**</span>
+
+<span class="gs">**Bold paragraph the second.**</span></code></pre></figure>
+
+<blockquote>
+  <p><strong>Bold paragraph the first.</strong></p>
+
+  <p><strong>Bold paragraph the second.</strong></p>
+</blockquote>
+
+<h3 id="headers">Headers</h3>
+<p>Headers are created using hash marks before the text designed to be a header. The entire paragraph will become a header. A header can have one to six hash marks before it. The more hashes, the smaller the header will be.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="gh"># Title</span>
+
+<span class="gu">## Introduction</span>
+
+This is the introduction text.
+
+<span class="gu">## Chapter 1</span>
+
+This is the first chapter's text.</code></pre></figure>
+
+<blockquote>
+  <h1 id="title">Title</h1>
+
+  <h2 id="introduction">Introduction</h2>
+
+  <p>This is the introduction text.</p>
+
+  <h2 id="chapter-1">Chapter 1</h2>
+
+  <p>This is the first chapter’s text.</p>
+</blockquote>
+
+<p>All of the headers look like this:</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="gh"># Header 1</span>
+
+<span class="gu">## Header 2</span>
+
+<span class="gu">### Header 3</span>
+
+<span class="gu">#### Header 4</span>
+
+<span class="gu">##### Header 5</span>
+
+<span class="gu">###### Header 6</span>
+
+<span class="gu">####### Not a header</span></code></pre></figure>
+
+<hr />
+
+<h2 id="document-formatting">Document formatting</h2>
+
+<p>Sometimes you need to do more than just make paragraphs and mark up the text inside of them. Markdown includes methods for creating lists, quoted text, and more.</p>
+
+<h3 id="lists">Lists</h3>
+
+<p>There are two types of lists in markdown, <strong>ordered lists</strong> and <strong>unordered lists</strong>.</p>
+
+<h4 id="unordered-lists">Unordered Lists</h4>
+
+<p>To create an unordered list, you put an asterix at the beginning of each new item in the list, and separate the items by a single new line.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">*</span> Item 1
+<span class="p">*</span> Item 2
+<span class="p">*</span> Item 3</code></pre></figure>
+
+<blockquote>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+</blockquote>
+
+<p>Unordered lists have a bullet placed before each item.</p>
+
+<p>Dashes and pluses can also be used to create list items, so this is a valid list:</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">-</span> Item 1
+<span class="p">+</span> Item 2
+<span class="p">*</span> Item 3</code></pre></figure>
+
+<p>Some people prefer to use dashes or plus symbols because they are not used anywhere else in markdown formatting, but others prefer to use the asterisk because it looks more like a bullet. The choice is up to you!</p>
+
+<h4 id="ordered-lists">Ordered Lists</h4>
+
+<p>To create an ordered lists, instead of putting an asterisk, dash, or plus before the list item, you put a number and a period.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">1.</span> Item 1
+<span class="p">2.</span> Item 2
+<span class="p">3.</span> Item 3</code></pre></figure>
+
+<blockquote>
+  <ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+</blockquote>
+
+<p>No matter what order you place the numbers in your plaintext file, markdown will generate the correct numbers in the displayed version.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">10.</span> Item 1
+<span class="p">2.</span> Item 2
+<span class="p">9.</span> Item 3</code></pre></figure>
+
+<p>This markup will still generate a list that looks like this:</p>
+
+<blockquote>
+  <ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+</blockquote>
+
+<h4 id="list-formatting">List formatting</h4>
+
+<p>Whether ordered or unordered, all lists follow some simple rules.</p>
+
+<p>You can embed sub-lists inside others by indenting the sub-lists.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">*</span> Item 1
+<span class="p">*</span> Item 2
+<span class="p">  *</span> Sub-item 1
+<span class="p">  *</span> Sub-item 2
+<span class="p">*</span> Item 3</code></pre></figure>
+
+<p>If you embed an ordered list inside another list, the numerical ordering will be unique for each sub-list.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">1.</span> Item 1
+<span class="p">2.</span> Item 2
+<span class="p">  1.</span> Sub-item 1
+<span class="p">  2.</span> Sub-item 2
+<span class="p">3.</span> Item 3
+<span class="p">  1.</span> Sub-item 1
+<span class="p">  2.</span> Sub-item 2</code></pre></figure>
+
+<p>Placing one or two newlines between list items will format the lists differently. Two newlines will space the items further part.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">1.</span> Item 1
+<span class="p">2.</span> Item 2</code></pre></figure>
+
+<blockquote>
+  <ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ol>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">1.</span> Item 1
+<span class="p">
+2.</span> Item 2</code></pre></figure>
+
+<blockquote>
+  <ol>
+    <li>
+      <p>Item 1</p>
+    </li>
+    <li>
+      <p>Item 2</p>
+    </li>
+  </ol>
+</blockquote>
+
+<p>You can include multiple paragraphs inside of a list by indenting the paragraphs by two spaces.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">1.</span> Item 1, paragraph 1
+  
+  Item 1, paragraph 2
+<span class="p">2.</span> Item 2</code></pre></figure>
+
+<blockquote>
+  <ol>
+    <li>Item 1, paragraph 1</li>
+  </ol>
+
+  <p>Item 1, paragraph 2
+2. Item 2</p>
+</blockquote>
+
+<h3 id="blockquotes">Blockquotes</h3>
+
+<p>Sometimes you want to quote a large chunk of text and put it off from the rest of the text. Blockquotes are a way to do this. To create a blockquote, add an greater-than sign at the beginning of the line of the paragraph you want to quote.</p>
+
+<p>Blockquotes can be nested by adding multiple greater-than signs.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">Regular text.
+<span class="gt">
+&gt; A quoted paragraph.</span>
+<span class="gt">&gt; </span>
+<span class="gt">&gt; Another quoted paragraph.</span>
+<span class="gt">&gt; </span>
+<span class="gt">&gt; &gt; Whoa nested blockquotes.</span>
+<span class="gt">&gt; </span>
+<span class="gt">&gt; Final paragraph.</span></code></pre></figure>
+
+<blockquote>
+  <p>Regular text.</p>
+
+  <blockquote>
+    <p>A quoted paragraph.</p>
+
+    <p>Another quoted paragraph.</p>
+
+    <blockquote>
+      <p>Whoa nested blockquotes.</p>
+    </blockquote>
+
+    <p>Final paragraph.</p>
+  </blockquote>
+</blockquote>
+
+<p>Blockquotes can be used in a variety of ways. For instance, we’re using blockquotes to show how code will look once formatted.</p>
+
+<h3 id="code">Code</h3>
+
+<p>There are two ways to demarkate code in your text.</p>
+
+<p>Code will display in a monospaced font, and will escape any markdown formatting (so that you see the actual characters, not formatted text).</p>
+
+<h4 id="in-line-code">In-line Code</h4>
+
+<p>You can wrap a line of code in back-tic marks to make that line show up in a monospaced font.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">To <span class="gs">**bold text**</span>, <span class="sb">`add **two asterisks**`</span>.</code></pre></figure>
+
+<blockquote>
+  <p>To <strong>bold text</strong>, <code class="highlighter-rouge">add **two asterisks**</code>.</p>
+</blockquote>
+
+<h4 id="code-blocks">Code Blocks</h4>
+
+<p>If you add 4 spaces at the beginning of a line, markdown will treat that whole line as code. Any spaces that you indent beyond the 4 will show up to the user, so that you can show embedded code blocks.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">    *</span> List item 1
+<span class="p">    *</span> List item 2
+<span class="p">      *</span> List sub-item 1</code></pre></figure>
+
+<blockquote>
+  <div class="highlighter-rouge"><pre class="highlight"><code>* List item 1
+* List item 2
+  * List sub-item 1
+</code></pre>
+  </div>
+</blockquote>
+
+<h2 id="links-images-and-html">Links, Images, and HTML</h2>
+
+<h3 id="links">Links</h3>
+
+<p>Links are the lifeblood of the internet. Linking to other pages on your own site, and other sites on the internet, is a vital function. You can easily create links in markdown.</p>
+
+<p>The link syntax looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">[</span><span class="nv">Go to GitHub</span><span class="p">](</span><span class="sx">http://github.com</span><span class="p">)</span>.</code></pre></figure>
+
+<p>Which produces the following link:</p>
+
+<blockquote>
+  <p><a href="http://github.com">Go to GitHub</a>.</p>
+</blockquote>
+
+<p>Let’s break that down. Inside the brackets, you find the text you want to display to the user. Directly after the brackets (no spaces!), you put a URL inside parentheses. This URL must start with <code class="highlighter-rouge">http://</code> or <code class="highlighter-rouge">https://</code>, or the link won’t form.</p>
+
+<h3 id="images">Images</h3>
+
+<p>Images work similarly to links.</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">![</span><span class="nv">A red panda.</span><span class="p">](</span><span class="sx">https://upload.wikimedia.org/wikipedia/commons/2/25/Lesser_panda_standing.jpg</span><span class="p">)</span></code></pre></figure>
+
+<blockquote>
+  <p><img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Lesser_panda_standing.jpg" alt="A red panda." /></p>
+</blockquote>
+
+<p>Importantly, the image link begins with an exclamation point. Without this, you’ll simply link to an image.</p>
+
+<p>After that comes the alternate text. Unlike with a link, this text will not be visible to most users. However, if the image does not load, or if the user uses a text-to-speech screen reader, then the text will become available to the user. Finally, you include a URL of the image itself just like you would of a link.</p>
+
+<p>Images will show up as their original size, so it’s recommended that you use small images. If you’re good at web design, then you can resize them using the CSS files.</p>
+
+<h3 id="html">HTML</h3>
+
+<p>Markdown works by being turned into HTML for your browser to read. As such, you can include HTML in your markdown documents, and it will work just fine. For instance, if you wanted to make sure that a link opened in a new window or tab, you could include the following markdown:</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">Check out our <span class="p">[</span><span class="nv">store</span><span class="p">](</span><span class="sx">http://store.com</span><span class="p">)</span>!
+
+It's a lot better than our <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://competitorsstore.com"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>competitor's store<span class="nt">&lt;/a&gt;</span>.</code></pre></figure>
+
+<p>The first link would load normally, and the second (because of the <code class="highlighter-rouge">target="_blank"</code> attribute) would load in a new window or tab.</p>
+
+<p>We’re not going to go into the details of HTML in this course, but if you’d like to learn more we’re recommend check out one of the free tutorials online.</p>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Connor's Profile</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Connor's Profile</li>
+          <li><a href="mailto:connor.bray@icloud.com">connor.bray@icloud.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/concon121">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">concon121</span>
+            </a>
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">My personal blog on github!</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
