@@ -1,12 +1,11 @@
 # Site settings
-title: Connor's Profile
+title: concon121@github
 email: connor.bray@icloud.com
-description: My personal blog on github!
+description: Random musings on the things I get up to!
 baseurl: "/concon121.github.io"
 url: "http://concon121.github.io"
 github_username:  concon121
 permalink: /blog/:year/:title/
-
 
 # Build settings
 sass:

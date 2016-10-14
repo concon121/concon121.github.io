@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>atom-maven</title>
+    <meta name="description" content="My personal blong on github!">
+
+    <link rel="stylesheet" href="/concon121.github.io/css/main.css">
+    <link rel="canonical" href="http://concon121.github.io/concon121.github.io/blog/2016/what-is-atom-maven/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/concon121.github.io/">concon121@github</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">atom-maven</h1>
+    <p class="post-meta">Oct 14, 2016</p>
+  </header>
+
+  <article class="post-content">
+    <p>So it seemed appropriate for my first attempt at my first blog post to write about my first ever so slightly semi not unsuccessful open source project - <a href="https://atom.io/packages/atom-maven">atom-maven</a>.</p>
+
+<p>Earlier this year, I fell in love with <a href="https://atom.io">atom</a>, the new (ish) text editor developed by GitHub.  Its marketed as a “hackable text editor for the 21st century”, and it really lives up to that claim allowing you to customise it to your hearts content and extends its functionality via custom plugins (if you want to be proper about it, they’re called packages).</p>
+
+<p>After the “fan boy” period wore off, I got down to business and started looking into how I could really optimise my work stream using the flexibility and customisability that atom affords me.  At the time when I started using atom, I was doing a lot of front end UI HTML and JavaScript work, so of course I hunted down every and all plugins which would make my life easier in that respect.  There are code formatters (<a href="https://atom.io/packages/atom-beautify">atom-beautify</a>) and linters (<a href="https://atom.io/packages/linter-eslint">linter-eslint</a>) galore, there’s even a sexy little plugin called <a href="https://atom.io/packages/vim-mode">vim-mode</a> (and <a href="https://atom.io/packages/ex-mode">ex-mode</a>) which give you vim short cuts in your text editor!  I was literally in developer Nirvana!</p>
+
+<p>Unfortunately the day came when I had to switch back from JavaScript to good old Java, and switch back to my slow, clunky, memory sucking Eclipse IDE.  Don’t get me wrong, I like Eclipse.  It’s got a lot of really cool features that I couldn’t do without.  Some days though, I just want to throw it through a window.  If you’ve ever used Eclipse, you’ve probably had one of those moments where you’re sat there thinking, “Why are you spending 10 minutes building the ENTIRE workspace, when all I asked you to do was open this poxy little file…”.  It was one of these moments which ultimately sparked my quest to turn my simple atom text editor into a fully fledged Java IDE.</p>
+
+<p>First things first, what plugins had other people already created which would aid my noble quest?</p>
+
+<ul>
+  <li><a href="https://atom.io/packages/linter-javac">linter-javac</a> - Even the best developers make mistakes.  Eclipse, as well as pretty much every other IDE has the functionality to point out things that will result in compilation errors.  linter-javac does just this.  It basically uses the javac installed on your system to compile your code in the background when you save your work.  Lovely.</li>
+  <li><a href="https://atom.io/packages/autocomplete-java">autocomplete-java</a> - This one gives you a little drop down as you’re typing, suggesting completions for the things you could be typing.  I find this one really useful for exploring API’s I’m fairly unfamiliar with.</li>
+</ul>
+
+<p>For me, these two plugins covered the basics.  I’m a bit of a command line geek, so there’s a lot of stuff IDE’s do, for example git integration (which atom does a whole lot better by the way) or building my code, which I just prefer to just do on the command line or write scripts to do.</p>
+
+<p>Conceptually the two plugins I found are great, they provide exactly the functionality that I wanted.  There’s just one catch.  Both of these plugins require a .classpath file to have been configured in the root folder of your project to tell them what third party dependencies that your project uses and can compile against.  As an avid Apache Maven user I’m quite used to M2E bridging the gap between Eclipse and Maven, sorting out my classpath woes for me automatically.  And thus <a href="https://atom.io/packages/atom-maven">atom-maven</a> was born.</p>
+
+<p>The aim of <a href="https://atom.io/packages/atom-maven">atom-maven</a> is to do for atom what M2E does for eclipse.</p>
+
+<ol>
+  <li>Sort out your projects classpath, based on the dependencies provided in your pom.xml file.</li>
+  <li>Provide a convenient GUI and short cuts to build your projects and perform other Maven functions with relative ease.</li>
+</ol>
+
+<p>A good amount of progress has been made into figuring out what should be on the classpath, although there is still a lot of features missing and a lot of work still to do before I will be 100% happy to use it as part of my day to day tool set.  In the coming weeks, I will write posts explaining some of the things I learnt creating atom-maven, and hopefully knock out a few more features while I’m at it.</p>
+
+<p>Happy Coding!</p>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">concon121@github</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>concon121@github</li>
+          <li><a href="mailto:connor.bray@icloud.com">connor.bray@icloud.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/concon121">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">concon121</span>
+            </a>
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">My personal blong on github!</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
