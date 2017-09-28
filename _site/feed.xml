@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Generation Y</title>
+		<description>Rantings of a software developer</description>
+		<link></link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>atom-commit-templates</title>
+				
+				
+					<description>Easily set custom commit templates from the Atom UI</description>
+				
+				<pubDate>Fri, 29 Sep 2017 00:46:00 +0100</pubDate>
+				<link>http://localhost:4000/blog/2017/09/29/atom-commit-templates/</link>
+				<guid isPermaLink="true">http://localhost:4000/blog/2017/09/29/atom-commit-templates/</guid>
+			</item>
+		
+			<item>
+				<title>Electron Designer</title>
+				
+				
+					<description>Experimenting in the ways of the Electron!</description>
+				
+				<pubDate>Fri, 29 Sep 2017 00:43:00 +0100</pubDate>
+				<link>http://localhost:4000/blog/2017/09/29/electron-designer/</link>
+				<guid isPermaLink="true">http://localhost:4000/blog/2017/09/29/electron-designer/</guid>
+			</item>
+		
+			<item>
+				<title>node-maven-api</title>
+				
+				
+					<description>Run Maven commands via a Node JS API!</description>
+				
+				<pubDate>Fri, 29 Sep 2017 00:26:00 +0100</pubDate>
+				<link>http://localhost:4000/blog/2017/09/29/node-maven-api/</link>
+				<guid isPermaLink="true">http://localhost:4000/blog/2017/09/29/node-maven-api/</guid>
+			</item>
+		
+			<item>
+				<title>atom-maven</title>
+				
+				
+					<description>Maven integration for Atom!</description>
+				
+				<pubDate>Thu, 28 Sep 2017 23:45:00 +0100</pubDate>
+				<link>http://localhost:4000/blog/2017/09/28/atom-maven/</link>
+				<guid isPermaLink="true">http://localhost:4000/blog/2017/09/28/atom-maven/</guid>
+			</item>
+		
+			<item>
+				<title>What is atom-maven?</title>
+				
+				
+					<description>atom-maven is a plugin for the popular text editor atom.io which attempts to add support for Apache Maven.</description>
+				
+				<pubDate>Fri, 14 Oct 2016 21:39:00 +0100</pubDate>
+				<link>http://localhost:4000/blog/2016/10/14/what-is-atom-maven/</link>
+				<guid isPermaLink="true">http://localhost:4000/blog/2016/10/14/what-is-atom-maven/</guid>
+			</item>
+		
+			<item>
+				<title>About the Author</title>
+				
+				
+					<description>&lt;p&gt;Hi there! I’m Paul. I’m a physics major turned programmer. Ever since I first learned how to program while taking a scientific computing for physics course, I have pursued programming as a passion, and as a career. Below is a compilation of some of my favourite things that I have built over the years. You may find everything else on my &lt;a href=&quot;http://github.com/lenpaul&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt; and &lt;a href=&quot;https://codepen.io/lenpaul&quot; target=&quot;_blank&quot;&gt;Code Pen&lt;/a&gt; profiles.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Mon, 04 Apr 2016 00:00:00 +0100</pubDate>
+				<link>http://localhost:4000/millenial/millennial-gh-pages/facts/About-the-Author.html</link>
+				<guid isPermaLink="true">http://localhost:4000/millenial/millennial-gh-pages/facts/About-the-Author.html</guid>
+			</item>
+		
+	</channel>
+</rss>
