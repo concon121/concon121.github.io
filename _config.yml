@@ -5,14 +5,15 @@ description: Random musings on the things I get up to!
 baseurl: "/concon121.github.io"
 url: "http://concon121.github.io"
 github_username:  concon121
-permalink: /blog/:year/:title/
+permalink: none
+paginate: 5
 
 # Build settings
-sass:
-  sass_dir: _sass
-include: ['_pages']
-kramdown:
-  input: GFM
+markdown:            kramdown
+highlighter:         rouge
+permalink:           none
+plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed]
 
-collections:
-    - index
+sass:
+  sass_dir: assets/css
+  style: :nested

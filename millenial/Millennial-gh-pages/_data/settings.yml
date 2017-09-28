@@ -1,0 +1,25 @@
+title:  "Millennial"
+tagline: "a Jekyll theme"
+description:
+
+# Change to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: 'millennial-3'
+
+menu:
+- {name: 'Interesting Facts', file: 'facts.html'}
+- {name: 'Learning Resources', file: 'resources.html'}
+- {name: 'Sample Posts', file: 'sample-posts.html'}
+- {name: 'Documentation', file: 'documentation.html'}
+- {name: 'About', file: 'about.html'}
+- {name: 'Contact', file: 'contact.html'}
+
+social:
+- {icon: 'twitter', link: 'https://twitter.com/paululele'}
+- {icon: 'facebook', link: 'https://www.facebook.com/Le.Paul.94'}
+- {icon: 'instagram', link: 'https://instagram.com/paululele'}
+- {icon: 'envelope', link: 'mailto:l.nguyen.paul@gmail.com'}
+- {icon: 'rss-square', link: 'feed.xml'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
