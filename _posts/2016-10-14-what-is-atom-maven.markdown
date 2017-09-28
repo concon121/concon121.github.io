@@ -5,6 +5,9 @@ date:   2016-10-14 21:39
 categories: atom-maven
 permalink: /blog/:year/:month/:day/:title/
 excerpt: "atom-maven is a plugin for the popular text editor atom.io which attempts to add support for Apache Maven."
+image:
+  feature: arctic-2.jpg
+tags: [sample]
 ---
 
 So it seemed appropriate for my first attempt at my first blog post to write about my first ever so slightly semi not unsuccessful open source project - [atom-maven][atom-maven].
