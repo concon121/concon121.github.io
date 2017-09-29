@@ -5,7 +5,7 @@ description: Random musings on the things I get up to!
 github_username: concon121
 permalink: none
 paginate: 5
-baseUrl: ""
+baseUrl: "http://concon121.github.io/"
 
 # Build settings
 markdown:            kramdown
