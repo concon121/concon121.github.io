@@ -3,6 +3,7 @@ title: concon121@github
 email: connor.bray@icloud.com
 description: Random musings on the things I get up to!
 url: "http://generation-y.cbscl.co.uk"
+baseUrl: "/generation-y.cbscl.co.uk"
 github_username:  concon121
 permalink: none
 paginate: 5
