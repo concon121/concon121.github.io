@@ -1,17 +1,14 @@
 # Site settings
 title: concon121@github
-email: connor.bray@icloud.com
+email: connor@cbscl.co.uk
 description: Random musings on the things I get up to!
-url: "http://generation-y.cbscl.co.uk"
-baseUrl: "/generation-y.cbscl.co.uk"
-github_username:  concon121
+github_username: concon121
 permalink: none
 paginate: 5
 
 # Build settings
 markdown:            kramdown
 highlighter:         rouge
-permalink:           none
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed]
 
 sass:
