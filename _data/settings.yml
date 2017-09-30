@@ -10,8 +10,6 @@ disqus:
 menu:
 - {name: 'Projects', file: 'projects.html'}
 - {name: 'Blog', file: 'blog.html'}
-- {name: 'Sample Posts', file: 'sample-posts.html'}
-- {name: 'Documentation', file: 'documentation.html'}
 - {name: 'About', file: 'about.html'}
 - {name: 'Contact', file: 'contact.html'}
 
