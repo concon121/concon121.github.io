@@ -130,48 +130,43 @@
 
 <p>To create the maven handler, you need to call the create method providing the path to the POM file to be handled.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var mvn = require('node-maven-api').create('/workspace/project/pom.xml');
+<pre><code>var mvn = require('node-maven-api').create('/workspace/project/pom.xml');
 
 mvn.clean();
 mvn.install();
 </code></pre>
-</div>
 
 <h3 id="clean">Clean</h3>
 
 <p>Invoke a maven clean on your project.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>mvn.clean();
+<pre><code>mvn.clean();
 </code></pre>
-</div>
 
 <h3 id="install">Install</h3>
 
 <p>Invoke a maven install on your project.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>mvn.install();
+<pre><code>mvn.install();
 </code></pre>
-</div>
 
 <h3 id="test">Test</h3>
 
 <p>Invoke a maven test on your project.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>mvn.test();
+<pre><code>mvn.test();
 </code></pre>
-</div>
 
 <h3 id="effective-pom">Effective POM</h3>
 
 <p>Get the effective pom for your project.  A promise will be returned which will be resolved to a javascript object which represents the xml effective pom.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var promise = mvn.effectivePom();
+<pre><code>var promise = mvn.effectivePom();
 
 promise.then((result) =&gt; {
     console.log('Effective POM is: ', result);
 });
 </code></pre>
-</div>
 
 <h3 id="custom-commands">Custom Commands</h3>
 
@@ -184,10 +179,9 @@ promise.then((result) =&gt; {
   <li>The command to execute.</li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>// mvn clean install -f /path/to/my/pom.xml
+<pre><code>// mvn clean install -f /path/to/my/pom.xml
 mvn.execCommand('my-custom-event', 'clean install');
 </code></pre>
-</div>
 
 <h3 id="events">Events</h3>
 
@@ -208,7 +202,7 @@ mvn.execCommand('my-custom-event', 'clean install');
 
 <p>For custom commands you may provide your own event name, with the assumption that ‘-failed’ will be automatically added in the event of a failure.</p>
 
-<p>You may use the <code class="highlighter-rouge">registerEvent</code> function to bind a callback to an event.</p>
+<p>You may use the <code>registerEvent</code> function to bind a callback to an event.</p>
 
 <p>Function Parameters:</p>
 
@@ -219,7 +213,7 @@ mvn.execCommand('my-custom-event', 'clean install');
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>mvn.registerEvent('my-custom-event', () =&gt; {
+<pre><code>mvn.registerEvent('my-custom-event', () =&gt; {
   console.log('My Custom Maven command was successful! :)')
 });
 
@@ -229,7 +223,6 @@ mvn.registerEvent('my-custom-event-failed', () =&gt; {
 
 mvn.execCommand('my-custom-event', 'clean install');
 </code></pre>
-</div>
 
   </article>
 

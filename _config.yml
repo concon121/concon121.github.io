@@ -5,11 +5,11 @@ description: Random musings on the things I get up to!
 github_username: concon121
 permalink: none
 paginate: 5
-baseUrl: "/concon121.github.io"
+baseUrl: "/"
 
 # Build settings
 markdown:            kramdown
-highlighter:         rouge
+highlighter:         pygments
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed]
 
 sass:
