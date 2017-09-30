@@ -124,52 +124,151 @@
   
 
   <article>
-    <h1 id="atom-commit-templates">atom-commit-templates</h1>
+    <p>Maven integration for atom!</p>
 
-<p><a href="https://api.travis-ci.org/concon121/atom-commit-templates"><img src="https://api.travis-ci.org/concon121/atom-commit-templates.png" alt="Build Status" /></a>
-<a href="https://www.codacy.com/app/connor-bray/atom-commit-templates?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=concon121/atom-commit-templates&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/d9426cb0602646f5a12dccb26a044c4e" alt="Codacy Badge" /></a>
-<a href="https://codeclimate.com/github/concon121/atom-commit-templates"><img src="https://codeclimate.com/github/concon121/atom-commit-templates/badges/gpa.svg" alt="Code Climate" /></a>
-<a href="https://codeclimate.com/github/concon121/atom-commit-templates"><img src="https://codeclimate.com/github/concon121/atom-commit-templates/badges/issue_count.svg" alt="Issue Count" /></a>
-<a href="https://atom.io/packages/atom-commit-templates"><img src="https://img.shields.io/apm/dm/atom-commit-templates.svg?maxAge=2592000" alt="Downloads" /></a></p>
+<p>Generates module specific .classpath files based on the Maven pom files in your Atom workspace.</p>
 
-<p>Easily set custom commit templates from the Atom UI</p>
+<h2 id="features">Features</h2>
 
-<h2 id="setting-a-git-commit-template">Setting a Git Commit Template</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Feature</th>
+      <th style="text-align: center">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Configures the classpath for every Maven module in your workspace.</td>
+      <td style="text-align: center">Complete</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Automatically update the classpath when you update your pom files.</td>
+      <td style="text-align: center">Complete</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Build the Maven projects in the workspace on save.</td>
+      <td style="text-align: center">Complete</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Build the Maven project via user interaction with the UI.</td>
+      <td style="text-align: center">Complete</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Notification when your classpath has been configured.</td>
+      <td style="text-align: center">Complete</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Notification when a duplicate dependency definition has been identified.</td>
+      <td style="text-align: center">TODO</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Notification when a dependency does not exist.</td>
+      <td style="text-align: center">Complete</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Link to the location of erroneous dependencies.</td>
+      <td style="text-align: center">In Progress</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Identify when a new pom file is added into the workspace and bind the change event to it.</td>
+      <td style="text-align: center">TODO</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>To enable your git commit template to take effect, this package writes to a <code>.gitcommit</code> file in your home directory, and updates your git configuration to use this file as a commit template e.g.</p>
+<p><img src="https://cloud.githubusercontent.com/assets/12021575/15692408/12018824-2786-11e6-8cac-289fd0af4076.JPG" alt="310516" /></p>
 
-<pre><code>git config --global commit.template ~/.gitcommit
-</code></pre>
+<h3 id="using-the-ui-features">Using the UI Features</h3>
+<p>There are two method of using atom-maven from the UI; from the Packages menu, and from the command palette.</p>
 
-<h4 id="keyboard-shortcuts">Keyboard Shortcuts</h4>
+<h4 id="packages-menu">Packages menu</h4>
+
+<p><img src="https://cloud.githubusercontent.com/assets/12021575/25781403/bba6e132-3331-11e7-9596-b6bd74812bd9.PNG" alt="packages-menu" /></p>
+
+<h4 id="command-palette">Command Palette</h4>
+
+<p><img src="https://cloud.githubusercontent.com/assets/12021575/25781396/ab10a45c-3331-11e7-8131-06fcd1f0c132.PNG" alt="command-palette" /></p>
+
+<h2 id="known-issues">Known Issues</h2>
+
+<p>The notification which informs you that a dependency doesn’t exist always points to line 0.</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>It is required that Apache Maven is correctly installed on your computer and is ready to use on the command line.</p>
+
+<p>Please see the Maven website for <a href="http://maven.apache.org/install.html">installation instructions</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Configuration Key</th>
+      <th style="text-align: left">Required / Optional</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Classpath File Name</td>
+      <td style="text-align: left">Optional</td>
+      <td style="text-align: left">The name of the file to write your classpath to in your Maven module.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Generate Classpaths On Startup</td>
+      <td style="text-align: left">Optional</td>
+      <td style="text-align: left">Build all maven pom files on Atom start up and create classpaths for each.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Generate Classpaths On Save</td>
+      <td style="text-align: left">Optional</td>
+      <td style="text-align: left">Watch maven pom files for save events and create classpath when the pom changes.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="whats-new">What’s new?</h2>
+<p>Checkout the <a href="https://github.com/concon121/atom-maven/blob/master/CHANGELOG.md">changelog</a> for the full list of recently implemented features and bug fixes.</p>
+
+<h2 id="backlog-and-issues">Backlog and Issues</h2>
+<p>The complete list of features which needs to be implemented, future enhancements, known issues and bugs can be found on the atom-maven GitHub repository <a href="https://github.com/concon121/atom-maven/issues">issues page</a>.</p>
+
+<h2 id="contributing">Contributing</h2>
+<p>Contributions are always welcome, there is still a lot of work to be done!  Feel free to pick up an issue in the backlog and open a pull request to get the conversation going.  I am more than happy to provide help and direction, and very welcoming of advice and suggestions.</p>
+
+<h2 id="raising-issues">Raising Issues</h2>
+
+<p>If atom-maven is not resolving your classpath correctly, it is really useful for debugging purposes if you could provide sample pom files which I can use to reproduce your issue.</p>
+
+<h2 id="what-can-i-use-atom-maven-for">What can I use atom-maven for?</h2>
+
+<p>I started developing atom-maven as I wanted to be able to write my Java code in Atom.  There are a couple of packages I found which make this easier, but they depend on a .classpath file being configured.  As a user of Maven, Maven configures your classpath and makes sure all your dependencies are available when you need them to be.  The atom-maven package replicates this functionality and generates the .classpath file other Atom Java packages need, based on your Maven pom files!</p>
+
+<h3 id="useful-java-packages">Useful Java Packages</h3>
+
+<p>The below atom packages work well with atom-maven:</p>
 
 <ul>
-  <li><code>ctrl-shift-alt-t</code> on Windows and Linux</li>
-  <li><code>cmd-shift-alt-t</code> on OSX</li>
-  <li><code>Atom Commit Templates: Set Commit Template</code> from the command palette</li>
+  <li><a href="https://atom.io/packages/autocomplete-java">autocomplete-java</a></li>
+  <li><a href="https://atom.io/packages/linter-javac">linter-javac</a></li>
 </ul>
 
-<h4 id="input-dialog">Input Dialog</h4>
-<p><img src="https://user-images.githubusercontent.com/12021575/30941905-a8f31262-a3df-11e7-86e5-772338acb340.jpg" alt="atom-commit-template" /></p>
+<h4 id="autocomplete-java">autocomplete-java</h4>
+<p>Capable of reading the generated .classpath file, this package provides functionlity to organise imports, complete packages and classes, examine methods etc…</p>
 
-<h4 id="commit-message-automatically-populated">Commit Message Automatically Populated</h4>
-<p><img src="https://user-images.githubusercontent.com/12021575/30941982-10b29774-a3e0-11e7-89eb-e0f36498a4f7.png" alt="commit-message" /></p>
+<p>Note. git ignored .classpath files are not discovered.</p>
 
-<h2 id="goes-well-with">Goes well with</h2>
-
-<ul>
-  <li><a href="https://atom.io/packages/git-plus">Git Plus</a> - Git commands without the terminal!</li>
-  <li><a href="https://atom.io/packages/git-control">Git Control</a> - A git GUI directly in Atom</li>
-</ul>
+<h4 id="linter-javac">linter-javac</h4>
+<p>Capable of reading the generated .classpath file, this package will attempt to compile your .java files and show you all the compile time problems with your code.</p>
 
 <h2 id="kudos">Kudos</h2>
-
 <p>Kudos to the following, for making my life easier!</p>
 
 <ul>
-  <li><a href="https://github.com/aki77/atom-input-dialog">atom-input-dialog</a></li>
+  <li><a href="https://www.npmjs.com/package/node-maven-api">node-maven-api</a></li>
+  <li><a href="https://github.com/tcarlsen/atom-message-panel">atom-message-panel</a></li>
+  <li><a href="https://github.com/Leonidas-from-XIV/node-xml2js">xml2js</a></li>
 </ul>
-
 
   </article>
 
