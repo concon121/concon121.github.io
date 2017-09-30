@@ -1,11 +1,12 @@
 # Site settings
 title: concon121@github
-email: connor@cbscl.co.uk
+email: connor.bray@icloud.com
 description: Random musings on the things I get up to!
-github_username: concon121
-permalink: none
+baseurl: "/"
+github_username:  concon121
+
 paginate: 5
-baseUrl: "/"
+
 
 # Build settings
 markdown:            kramdown
