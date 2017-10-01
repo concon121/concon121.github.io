@@ -70,7 +70,7 @@ The action toolbar goes along the top of the screen.
 
 #### Select All
 
-![select-all](https://raw.githubusercontent.com/concon121/electron-designer/master/images/images/select-all.PNG)
+![select-all](https://raw.githubusercontent.com/concon121/electron-designer/master/images/select-all.PNG)
 
 #### Editing Controls
 
