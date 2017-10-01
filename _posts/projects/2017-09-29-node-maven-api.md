@@ -7,7 +7,7 @@ permalink: /blog/:year/:month/:day/:title/
 excerpt: "Run Maven commands via a Node JS API!"
 image:
   feature: nodejs.jpg
-tags: [sample]
+tags: [npm, javascript, js, node, nodejs, projects]
 link: https://www.npmjs.com/package/node-maven-api
 ---
 

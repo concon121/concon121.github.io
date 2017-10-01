@@ -7,7 +7,7 @@ permalink: /blog/:year/:month/:day/:title/
 excerpt: "Easily set custom commit templates from the Atom UI"
 image:
   feature: atom-mark.png
-tags: [sample]
+tags: [atom, git, javascript, js, node, nodejs, projects]
 link: https://atom.io/packages/atom-commit-templates
 ---
 

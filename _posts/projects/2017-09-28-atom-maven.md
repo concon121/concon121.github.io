@@ -7,7 +7,7 @@ permalink: /blog/:year/:month/:day/:title/
 excerpt: "Maven integration for Atom!"
 image:
   feature: atom-mark.png
-tags: [sample]
+tags: [atom, apache, maven, javascript, js, node, nodejs, projects]
 link: https://atom.io/packages/atom-maven
 ---
 

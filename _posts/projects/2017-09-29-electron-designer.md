@@ -7,7 +7,7 @@ permalink: /blog/:year/:month/:day/:title/
 excerpt: "Experimenting in the ways of the Electron!"
 image:
   feature: electron.jpg
-tags: [sample]
+tags: [electron, javascript, js, node, nodejs, projects]
 link: https://github.com/concon121/electron-designer
 ---
 
