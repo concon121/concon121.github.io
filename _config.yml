@@ -10,7 +10,7 @@ paginate: 5
 
 # Build settings
 markdown:            kramdown
-highlighter:         pygments
+highlighter:         rouge
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed]
 
 sass:

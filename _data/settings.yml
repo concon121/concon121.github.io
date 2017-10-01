@@ -10,11 +10,12 @@ disqus:
 menu:
 - {name: 'Projects', file: 'projects.html'}
 - {name: 'Blog', file: 'blog.html'}
-- {name: 'About', file: 'about.html'}
 - {name: 'Contact', file: 'contact.html'}
 
 social:
 - {icon: 'facebook', link: 'https://www.facebook.com/connor.bray'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/connor-bray-3410867b/'}
+- {icon: 'github', link: 'https://github.com/concon121/'}
 - {icon: 'instagram', link: 'https://instagram.com/concon121'}
 - {icon: 'envelope', link: 'mailto:connor@cbscl.co.uk'}
 
